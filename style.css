@@ -2,7 +2,9 @@
     background-color: cornsilk;
 }
 
-h1 {
+h1.section_headers {
     font-family: Impact;
-
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: 2px 2px lightseagreen;
 }
