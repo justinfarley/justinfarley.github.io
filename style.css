@@ -13,6 +13,9 @@ h1.section_headers {
 
 .centered {
     text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 .navlist {
     padding-left: 230px;
@@ -32,25 +35,31 @@ h1.section_headers {
     background-image: url("./images/headergifbackground.gif");
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: cover;
     position: relative;
-    align-self: center;
-    align-items: center;
-    align-content: center;
-    vertical-align: middle;
     width: 100vw;
     height: 100vh;
     color: white;
 }
 
 #aboutme {
-    position: absolute;
-    top: 400px;
-    left: 150px;
+    position: relative;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    left: 200px;
+    bottom: 250px;
 }
 
 #aboutme:hover {
     content: url("./images/aboutmeHOVER.png");
     opacity: 1;
+}
+.name_title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .clickable {
