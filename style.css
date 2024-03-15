@@ -33,6 +33,10 @@ h1.section_headers {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
     width: 100vw;
     height: 100vh;
     color: white;
