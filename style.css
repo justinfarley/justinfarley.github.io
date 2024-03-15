@@ -44,8 +44,8 @@ h1.section_headers {
 
 #aboutme {
 
-    left: 200px;
-    bottom: 250px;
+    left: 20vw;
+    bottom: 25vh;
 }
 
 #aboutme:hover {
