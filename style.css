@@ -31,10 +31,9 @@ h1.section_headers {
 #header {
     background-image: url("./images/headergifbackground.gif");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     padding-left: 200px;
-    width: 100vw;
     height: 1080px;
     color: white;
 }
