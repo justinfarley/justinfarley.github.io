@@ -33,15 +33,15 @@ h1.section_headers {
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
-    padding-left: 200px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     color: white;
 }
 
 #aboutme {
     position: absolute;
     top: 400px;
-    left: 300px;
+    left: 150px;
 }
 
 #aboutme:hover {
