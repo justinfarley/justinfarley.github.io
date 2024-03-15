@@ -43,10 +43,7 @@ h1.section_headers {
 }
 
 #aboutme {
-    position: relative;
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
+
     left: 200px;
     bottom: 250px;
 }
@@ -63,7 +60,10 @@ h1.section_headers {
 }
 
 .clickable {
-
+    position: relative;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
 }
 .clickable:hover{
     opacity: 1;
