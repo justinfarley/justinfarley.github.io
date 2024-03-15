@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1.section_headers {
@@ -36,28 +37,33 @@ h1.section_headers {
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
+    min-width: 800px;
+    min-height: 800px;
     position: relative;
     width: 100vw;
     height: 100vh;
     color: white;
+    overflow: hidden;
 }
 
-#education {
+#edu {
     left: 5vw;
 }
 
 #name_header {
     width: 75vw;
     height: 75vh;
+    min-width: 500px;
+    min-height: 250px;
 }
 #clickable_container {
     position: relative;
     bottom: 30vh;
+    left: 5vw;
     vertical-align: top;
-
 }
 
-#education:hover {
+#edu:hover {
     content: url("./images/educationHOVER.png");
 }
 
@@ -75,8 +81,7 @@ h1.section_headers {
 .clickable {
     position: relative;
     display: inline;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     vertical-align: top;
 }
 .clickable:hover{
