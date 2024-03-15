@@ -29,7 +29,7 @@ h1.section_headers {
 }
 
 #header {
-    background-image: url("https://media1.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif?cid=6c09b952fq8wrs28o1d0wfm0pedu1ey2puc17f1uiceemjng&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g");
+    background-image: url("./images/headergifbackground.gif");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
