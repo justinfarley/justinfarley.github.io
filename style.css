@@ -20,6 +20,15 @@
     font-weight: 1 1000;
 }
 
+@keyframes grow {
+    from {
+        font-size: 40px;
+    }
+    to {
+        font-size: 50px;
+    }
+}
+
 @keyframes glow {
     0% {
         text-shadow: blue 0 0 50px,
@@ -101,7 +110,7 @@ h1.section_headers {
 }
 
 #edu {
-    left: 5vw;
+
 }
 
 #name_header {
@@ -113,19 +122,70 @@ h1.section_headers {
 
 #clickable_container {
     position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     top: 25vh;
-    left: 5vw;
-    vertical-align: top;
+    left: 14vw;
+    /*border: 5px solid red;*/
+    max-width: 75vw;
+}
+#clickable_container.secondContainer {
+    top: 35vh;
 }
 
 #edu:hover {
-    content: url("./images/educationHOVER.png");
+    text-shadow: -5px -5px 0 gray,
+                 1px 0 20px goldenrod,
+                 0 1px 20px goldenrod,
+                 -1px 0 20px goldenrod,
+                 0 -1px 20px goldenrod;
 }
 
 #aboutme:hover {
-    content: url("./images/aboutmeHOVER.png");
-    opacity: 1;
+    text-shadow: -5px -5px 0 gray,
+                 1px 0 20px mediumpurple,
+                 0 1px 20px mediumpurple,
+                 -1px 0 20px mediumpurple,
+                 0 -1px 20px mediumpurple;
 }
+#extracurr:hover {
+    text-shadow: -5px -5px 0 gray,
+                1px 0 20px lightseagreen,
+                0 1px 20px lightseagreen,
+                -1px 0 20px lightseagreen,
+                0 -1px 20px lightseagreen;
+}
+#skillsClickable:hover{
+    text-shadow: -5px -5px 0 gray,
+                1px 0 20px forestgreen,
+                0 1px 20px forestgreen,
+                -1px 0 20px forestgreen,
+                0 -1px 20px forestgreen;
+}
+#socialsClickable:hover {
+    text-shadow: -5px -5px 0 gray,
+                1px 0 20px royalblue,
+                0 1px 20px royalblue,
+                -1px 0 20px royalblue,
+                0 -1px 20px royalblue;
+}
+#expClickable:hover {
+    text-shadow: -5px -5px 0 gray,
+                1px 0 20px orangered,
+                0 1px 20px orangered,
+                -1px 0 20px orangered,
+                0 -1px 20px orangered;
+}
+#rlsClickable:hover {
+    text-shadow: -5px -5px 0 gray,
+                1px 0 20px firebrick,
+                0 1px 20px firebrick,
+                -1px 0 20px firebrick,
+                0 -1px 20px firebrick;
+}
+  
 .name_title {
     display: block;
     margin-left: auto;
@@ -135,9 +195,24 @@ h1.section_headers {
 
 .clickable {
     position: relative;
-    display: inline;
-    margin: 0 auto;
+    display: flex;
+    margin: 0 60px 0 0px;
+    padding: 0;
     vertical-align: top;
+    text-decoration: none;
+    align-self: center;
+    font-family: 'LuckiestGuy';
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    text-wrap: nowrap;
+    text-shadow: -5px -5px 0 gray;
+}
+.clickable.h1 {
+    text-align: center;
+    width: 50%;
+    height: 50%;
+
 }
 .clickable:hover{
     opacity: 1;
