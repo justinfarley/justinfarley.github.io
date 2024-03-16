@@ -20,15 +20,36 @@
     font-weight: 1 1000;
 }
 
+@keyframes glow {
+    0% {
+        text-shadow: blue 0 0 50px,
+                       gray -5px -5px 0;
+        color: white;
+    }
+    33% {
+        text-shadow: green 0 0 50px,
+                     gray -5px -5px 0;
+    }
+    66% {
+        text-shadow: red 0 0 50px,
+                     gray -5px -5px 0;
+    }
+    100% {
+        text-shadow: violet 0 0 50px,
+                     gray -5px -5px 0;
+        color: rgb(193, 193, 193);
+    }
+}
+
 #headingtext {
     position: relative;
     text-align: center;
     top: 20vh;
     font-family: 'Checkbook';
     font-size: 200px;
-    text-shadow: blue 0 0 50px;
     letter-spacing: 20px;
-    
+    color: white;
+    animation: glow 5s alternate infinite linear;
 }
 
 p, li {
@@ -91,6 +112,7 @@ h1.section_headers {
     min-width: 500px;
     min-height: 250px;
 }
+
 #clickable_container {
     position: relative;
     top: 25vh;
