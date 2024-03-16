@@ -24,7 +24,6 @@
     0% {
         text-shadow: blue 0 0 50px,
                        gray -5px -5px 0;
-        color: white;
     }
     33% {
         text-shadow: green 0 0 50px,
@@ -37,7 +36,6 @@
     100% {
         text-shadow: violet 0 0 50px,
                      gray -5px -5px 0;
-        color: rgb(193, 193, 193);
     }
 }
 
