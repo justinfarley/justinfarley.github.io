@@ -7,10 +7,12 @@
 @font-face {
     font-family: 'Checkbook';
     src: url('./fonts/CHECKBK0.TTF') format('truetype');
+    font-weight: 1 1000;
 }
 @font-face {
     font-family: 'Codehack';
     src: url('./fonts/NightmareCodehack.otf') format('opentype');
+    font-weight: 1 1000;
 }
 
 #headingtext {
@@ -31,8 +33,8 @@ p, li {
 }
 
 h1.section_headers {
-    font-family: Impact, cursive;
-    font-weight: 100;
+    font-family: Impact, cursive, sans-serif;
+    font-weight: lighter;
     text-transform: uppercase;
     text-shadow: 10px 10px 5px rgb(51, 32, 178);
     font-size: 50px;
