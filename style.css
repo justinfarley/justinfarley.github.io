@@ -14,6 +14,11 @@
     src: url('./fonts/NightmareCodehack.otf') format('opentype');
     font-weight: 1 1000;
 }
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('./fonts/LuckiestGuy.ttf') format('truetype');
+    font-weight: 1 1000;
+}
 
 #headingtext {
     position: relative;
@@ -21,7 +26,7 @@
     top: 20vh;
     font-family: 'Checkbook';
     font-size: 200px;
-    text-shadow: blue 0 0 75px;
+    text-shadow: blue 0 0 50px;
     letter-spacing: 20px;
     
 }
