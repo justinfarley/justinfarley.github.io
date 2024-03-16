@@ -4,12 +4,39 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Checkbook';
+    src: url('./fonts/CHECKBK0.TTF') format('TTF');
+}
+@font-face {
+    font-family: 'Codehack';
+    src: url('./fonts/NightmareCodehack.otf') format('opentype');
+}
+
+#headingtext {
+    position: relative;
+    text-align: center;
+    top: 20vh;
+    font-family: 'Checkbook';
+    font-size: 200px;
+    text-shadow: blue 0 0 75px;
+    letter-spacing: 20px;
+    
+}
+
+p, li {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h1.section_headers {
     font-family: Impact, cursive;
     font-weight: 100;
     text-transform: uppercase;
     text-shadow: 10px 10px 5px rgb(51, 32, 178);
     font-size: 50px;
+    letter-spacing: 20px;
 }
 
 .centered {
@@ -37,6 +64,7 @@ h1.section_headers {
     background-repeat: no-repeat;
     background-size: contain;
     background-size: cover;
+    background-position: center center;
     min-width: 800px;
     min-height: 800px;
     position: relative;
@@ -58,7 +86,7 @@ h1.section_headers {
 }
 #clickable_container {
     position: relative;
-    bottom: 30vh;
+    top: 25vh;
     left: 5vw;
     vertical-align: top;
 }
