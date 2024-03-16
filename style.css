@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Checkbook';
-    src: url('./fonts/CHECKBK0.TTF') format('TTF');
+    src: url('./fonts/CHECKBK0.TTF') format('truetype');
 }
 @font-face {
     font-family: 'Codehack';
