@@ -80,15 +80,61 @@ h1.section_headers {
     width: 100%;
     letter-spacing: 20px;
     white-space: nowrap;
-    background: -webkit-linear-gradient(#6200ff, #ff0000);
-    -webkit-background-clip: text;
+    background: linear-gradient(mediumpurple, red);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: -5px -5px 0 black;
+}
+h1.section_headers#aboutHeader {
+    background: linear-gradient(mediumpurple 40%, rgb(43, 23, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#educationHeader{
+    background: linear-gradient(goldenrod 40%, rgb(218, 82, 32));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#extraHeader{
+    background: linear-gradient(lightseagreen 60%, rgb(0, 61, 146));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#skillsHeader{
+    background: linear-gradient(rgb(67, 255, 80) 40%, forestgreen);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#jobHeader{
+    background: linear-gradient(rgb(255, 148, 109) 60%, orangered 85%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#rlsHeader{
+    background: linear-gradient(rgb(255, 144, 144) 30%, firebrick 70%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#mysocialsHeader{
+    background: linear-gradient(rgb(167, 189, 255) 30%, royalblue 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h1.section_headers#rlsSocialsHeader{
+    
 }
 p.section_bodies, ul.section_bodies {
     font-size: 30px;
     font-weight: 500;
     margin: 0 200px;
     text-align: center;
+}
+ul {
+    list-style-position: inside;
+    padding-bottom: 50px;
+}
+ul#nobullets {
+    list-style-type: none;
 }
 figure a {
     position: relative;
@@ -126,6 +172,10 @@ figure img {
     padding-left: 35px;
 }
 
+li h2 {
+    padding-bottom: 50px;
+}
+
 #header {
     background-image: url("./images/headergifbackground.gif");
     background-repeat: no-repeat;
@@ -141,10 +191,14 @@ figure img {
     overflow: hidden;
 }
 
-#edu {
-
+hr {
+    border-top: 10px solid black;
+    border-bottom: 0px;
 }
 
+h2 {
+    font-size: 50px;
+}
 #name_header {
     width: 75vw;
     height: 75vh;
@@ -222,9 +276,12 @@ div.sectionDivs {
     display: block;
     width: 100%;
     height: 100vh;
+    padding: 0 100px;
     overflow-y: scroll;
     overflow-x: hidden;
     background: radial-gradient(#64e6ae, violet);
+}
+div.sectionDivs::-webkit-scrollbar{
 }
   
 .name_title {
