@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 @font-face {
@@ -66,12 +67,43 @@ p, li {
 }
 
 h1.section_headers {
-    font-family: Impact, cursive, sans-serif;
+    font-family: 'Codehack';
     font-weight: lighter;
     text-transform: uppercase;
-    text-shadow: 10px 10px 5px rgb(51, 32, 178);
-    font-size: 50px;
+    padding-top: 50px;
+    z-index: 1;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 150px;
+    height: 30%;
+    width: 100%;
     letter-spacing: 20px;
+    white-space: nowrap;
+    background: -webkit-linear-gradient(#6200ff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p.section_bodies, ul.section_bodies {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 200px;
+    text-align: center;
+}
+figure a {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+figure img {
+    width: 200px;
+    height: 200px;
+}
+
+.figureSocials{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
 }
 
 .centered {
@@ -103,8 +135,8 @@ h1.section_headers {
     min-width: 800px;
     min-height: 800px;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     color: white;
     overflow: hidden;
 }
@@ -128,7 +160,6 @@ h1.section_headers {
     justify-content: center;
     top: 25vh;
     left: 14vw;
-    /*border: 5px solid red;*/
     max-width: 75vw;
 }
 #clickable_container.secondContainer {
@@ -184,6 +215,16 @@ h1.section_headers {
                 0 1px 20px firebrick,
                 -1px 0 20px firebrick,
                 0 -1px 20px firebrick;
+}
+
+div.sectionDivs {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: radial-gradient(#64e6ae, violet);
 }
   
 .name_title {
