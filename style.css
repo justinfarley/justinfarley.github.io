@@ -85,6 +85,7 @@ h1.section_headers {
     -webkit-text-fill-color: transparent;
     text-shadow: -5px -5px 0 black;
 }
+/*TODO: animate the background for each one this will look gas hopefully*/
 h1.section_headers#aboutHeader {
     background: linear-gradient(mediumpurple 40%, rgb(43, 23, 255));
     background-clip: text;
@@ -101,7 +102,7 @@ h1.section_headers#extraHeader{
     -webkit-text-fill-color: transparent;
 }
 h1.section_headers#skillsHeader{
-    background: linear-gradient(rgb(67, 255, 80) 40%, forestgreen);
+    background: linear-gradient(rgb(128, 255, 114) 20%, forestgreen 70%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -119,9 +120,6 @@ h1.section_headers#mysocialsHeader{
     background: linear-gradient(rgb(167, 189, 255) 30%, royalblue 80%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-h1.section_headers#rlsSocialsHeader{
-    
 }
 p.section_bodies, ul.section_bodies {
     font-size: 30px;
