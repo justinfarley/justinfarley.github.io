@@ -370,16 +370,17 @@ p {
 }
 footer {
     z-index: 2;
-    position: sticky;
-    bottom: 0;
-    background-color: rosybrown;
+    position: static;
+    background-color: rgb(188, 143, 143);
     width: 100%;
     height: 20px;
+    overflow: hidden;
 }
 footer h6::before {
-    content: 'Created by Justin Farley - Contact: j@farley-family.com - RLS Business Inquires: studioredlobster@gmail.com';
+    content: 'Created by Justin Farley - My Contact: j@farley-family.com - RLS Business Inquires: studioredlobster@gmail.com';
 }
 footer h6 {
+    
     font-family: sans-serif;
     font-size: 15px;
     text-align: center;
