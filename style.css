@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 @font-face {
@@ -66,7 +65,7 @@ h1.section_headers {
     font-family: 'Codehack';
     font-weight: lighter;
     text-transform: uppercase;
-    padding: 20px 0 0 0;
+    padding: 100px 0 0 0;
     z-index: 1;
     display: block;
     position: relative;
@@ -79,7 +78,7 @@ h1.section_headers {
     background: linear-gradient(mediumpurple, red);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: -5px -5px 0 black;
+    text-shadow: -5px -5px 0 white;
 }
 /*TODO: animate the background for each one this will look gas hopefully*/
 h1.section_headers#aboutHeader {
@@ -105,11 +104,16 @@ figcaption#instafig {
 figcaption#gmailfig {
     background: linear-gradient(90deg, rgba(62,101,207,1) 20%, rgba(62,101,207,1) 35%, rgba(199,22,16,1) 25%, rgba(199,22,16,1) 63%, rgba(242,166,12,1) 50%, rgba(242,166,12,1) 68%, rgba(8,133,27,1) 68%);
     background-clip: text;
+    background-position-x: center;
+    background-attachment: relative;
+    position: relative;
+    display: block;
     -webkit-text-fill-color: transparent;
 }
 .centeredImg {
     border-radius: 50%;
     display: inline;
+    position: relative;
     margin: 0 20px 25px auto;
 }
 .x150 {
@@ -131,6 +135,13 @@ h1.section_headers#rlsHeader{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+strong {
+    color: salmon;
+    font-weight: 1000;
+}
+i {
+    color: darkgrey;
+}
 h1.section_headers#mysocialsHeader{
     background: linear-gradient(rgb(167, 189, 255) 30%, royalblue 80%);
     background-clip: text;
@@ -139,8 +150,15 @@ h1.section_headers#mysocialsHeader{
 p.section_bodies, ul.section_bodies {
     font-size: 30px;
     font-weight: 500;
+    color: white;
     margin: 0 150px;
     text-align: center;
+}
+p.section_bodies a:any-link {
+    color: blanchedalmond;
+}
+p.section_bodies a:hover {
+    color: palevioletred;
 }
 ul {
     list-style-position: inside;
@@ -161,6 +179,7 @@ figure a {
 figure img {
     width: 200px;
     height: 200px;
+    position: relative;
 }
 
 .figureSocials{
@@ -186,9 +205,9 @@ figure img {
 li h2 {
     font-family: 'Timeline';
     /*Get better background then decide wether to keep or not*/
-    text-shadow: 5px 5px 0px white,
-                 5px 0 0 white,
-                 0 5px 0 white;
+    text-shadow: 5px 5px 0px black,
+                 5px 0 0 black,
+                 0 5px 0 black;
     padding-bottom: 10px;
 }
 
@@ -208,15 +227,15 @@ li h2 {
 }
 #navbar {
     display: block;
-    position: -webkit-sticky;
-    position: sticky;
+    position: -webkit-fixed;
+    position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
     height: 100px;
     text-align: center;
     overflow: hidden;
-    background: rgb(84, 43, 43);
+    background: rgba(84, 43, 43, 0.6);
 }
 .navbarclickable {
     display: inline-block;
@@ -311,7 +330,12 @@ div.sectionDivs {
     padding: 0 100px;
     overflow-y: visible;
     overflow-x: hidden;
-    background: radial-gradient(#64e6ae, violet);
+    background-attachment: fixed;
+    background-image: url("https://us.123rf.com/450wm/mishabokovan/mishabokovan1805/mishabokovan180500038/102620837-programming-code-background.jpg?ver=6");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: 50% 0;
+    /*background: radial-gradient(#64e6ae, violet);*/
 }
 div.sectionDivs::-webkit-scrollbar{
 
@@ -330,12 +354,16 @@ figure a img:hover {
     width: 250px;
     height: 250px;
     transition: width 200ms ease-in, height 200ms ease-in;
+    border: 7px solid crimson;
+
 }
 figure a img:not(:hover) {
     width: 200px;
     height: 200px;
     transition: width 500ms ease-out,height 500ms ease-out;
+    border: 7px solid mediumseagreen;
 }
+    
 p {
     padding: 20 px 0;
 }
@@ -371,6 +399,7 @@ p {
 footer {
     z-index: 2;
     position: static;
+    bottom: 0;
     background-color: rgb(188, 143, 143);
     width: 100%;
     height: 20px;
