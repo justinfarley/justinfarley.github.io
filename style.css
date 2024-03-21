@@ -43,7 +43,6 @@
                      gray -5px -5px 0;
     }
 }
-
 #headingtext {
     position: relative;
     text-align: center;
@@ -125,10 +124,22 @@ h1.section_headers#projectsHeader{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@keyframes skillsHeaderAnim {
+    0% {
+        background: darkgreen;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 white;
+    }
+    100% {
+        background: rgb(52, 151, 93);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 lemonchiffon;
+    }
+}
 h1.section_headers#skillsHeader{
-    background: linear-gradient(rgb(128, 255, 114) 20%, forestgreen 70%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation: skillsHeaderAnim 2s alternate infinite ease-in-out;
 }
 h1.section_headers#rlsHeader{
     background: linear-gradient(rgb(255, 144, 144) 30%, firebrick 70%);
@@ -339,16 +350,6 @@ div.sectionDivs {
 }
 div.sectionDivs::-webkit-scrollbar{
 
-}
-@keyframes grow {
-    from {
-        width: 200px;
-        height: 200px;
-    }
-    to {
-        width: 250px;
-        height: 250px;
-    }
 }
 figure a img:hover {
     width: 250px;
