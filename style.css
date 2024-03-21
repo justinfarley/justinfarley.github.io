@@ -196,6 +196,21 @@ h1.section_headers#projectsHeader{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@keyframes aboutmeHeaderAnim {
+    0% {
+        background: mediumpurple;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 white;
+        /*maybe letter spacing prolly not*/
+    }
+    100% {
+        background: darkorchid;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 lightblue;
+    }
+}
 @keyframes skillsHeaderAnim {
     0% {
         background: darkgreen;
@@ -208,11 +223,71 @@ h1.section_headers#projectsHeader{
         background: rgb(52, 151, 93);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-shadow: -5px -5px 0 lemonchiffon;
+        text-shadow: -5px -5px 0 lightgreen;
     }
+}
+@keyframes rlsHeaderAnim {
+    0% {
+        background: rgb(255, 48, 48);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 white;
+        /*maybe letter spacing prolly not*/
+    }
+    100% {
+        background: darkred;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 lightpink;
+    }
+}
+@keyframes mysocialsHeaderAnim {
+    0% {
+        background: royalblue;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 white;
+        /*maybe letter spacing prolly not*/
+    }
+    100% {
+        background: mediumblue;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 lightblue;
+    }
+}
+@keyframes projectsHeaderAnim {
+    0% {
+        background: gold;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 white;
+        /*maybe letter spacing prolly not*/
+    }
+    100% {
+        background: goldenrod;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -5px -5px 0 lightyellow;
+    }
+}
+h1.section_headers#projectsHeader{
+    animation: projectsHeaderAnim 2s alternate infinite ease-in-out;
+}
+h1.section_headers#rlsHeader{
+    animation: rlsHeaderAnim 2s alternate infinite ease-in-out;
+}
+h1.section_headers#rlsSocialsHeader{
+    animation: rlsHeaderAnim 2s alternate infinite ease-in-out;
+}
+h1.section_headers#mysocialsHeader{
+    animation: mysocialsHeaderAnim 2s alternate infinite ease-in-out;
 }
 h1.section_headers#skillsHeader{
     animation: skillsHeaderAnim 2s alternate infinite ease-in-out;
+}
+h1.section_headers#aboutHeader{
+    animation: aboutmeHeaderAnim 2s alternate infinite ease-in-out;
 }
 h1.section_headers#rlsHeader{
     background: linear-gradient(rgb(255, 144, 144) 30%, firebrick 70%);
