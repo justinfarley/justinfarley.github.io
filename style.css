@@ -369,14 +369,29 @@ li h2 {
                  0 5px 0 black;
     padding-bottom: 10px;
 }
-
+.projectsBody {
+    height: 100%;
+    width: 100%; 
+    text-align: center; 
+    color: white;
+    overflow: hidden;
+}
+.projectsBody .imgcontainer {
+    margin: 75px 0;
+}
+.projectsBody a img {
+    border-radius: 75px;
+    width: auto; 
+    height: 250px;
+    margin: 0 50px;
+}
 #header {
     background-image: url("./images/headergifbackground.gif");
     background-size: contain;
     background-size: cover;
     background-position: center center;
-    min-width: 1280px;
-    min-height: 791px;
+    /*min-width: 1280px;
+    min-height: 791px;*/
     position: relative;
     width: 100%;
     height: 100%;
@@ -496,17 +511,20 @@ div.sectionDivs {
     background-position: 50% 0;
     /*background: radial-gradient(#64e6ae, violet);*/
 }
-div.sectionDivs::-webkit-scrollbar{
-
+.projectsBody figure a img {
+    border: 5px solid black;
 }
-figure a img:hover {
+.projectsBody figure a img:hover {
+    border: 5px solid white;
+}
+#socials figure a img:hover {
     width: 250px;
     height: 250px;
     transition: width 200ms ease-in, height 200ms ease-in;
     border: 7px solid crimson;
 
 }
-figure a img:not(:hover) {
+#socials figure a img:not(:hover) {
     width: 200px;
     height: 200px;
     transition: width 500ms ease-out,height 500ms ease-out;
