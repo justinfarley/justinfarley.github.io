@@ -390,8 +390,8 @@ li h2 {
     background-size: contain;
     background-size: cover;
     background-position: center center;
-    /*min-width: 1280px;
-    min-height: 791px;*/
+    min-width: 1280px;
+    min-height: 791px;
     position: relative;
     width: 100%;
     height: 100%;
