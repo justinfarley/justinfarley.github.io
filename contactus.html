@@ -18,11 +18,11 @@
             <form action="https://formspree.io/f/mnqegppp" method="POST">
                 <h1>Contact RLS</h1>
                 <div class="inputField">
-                    <input type="text" name="name" id="name" placeholder="Full Name" required minlength="2" maxlength="40" pattern=".+ .+"> 
+                    <input type="text" name="name" id="name" placeholder="Full Name" required minlength="2" maxlength="40" pattern="[a-zA-Z]{2,20} [a-zA-Z]{3,20}"> 
                 </div>
 
                 <div class="inputField">
-                    <input type="text" name="email" id="email" placeholder="your@email.com" required pattern=".+@.+\.com">
+                    <input type="text" name="email" id="email" placeholder="your@email.com" required pattern="\S+@\S+\.com">
                 </div>
                 
                 <div class="inputField">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="inputField">
-                    <textarea name="message" id="message" rows="8" cols="50" placeholder="Message..." required></textarea>
+                    <textarea name="message" id="message" rows="8" cols="50" placeholder="Message..." required minlength="1"></textarea>
                 </div>
 
                 <input id="submit" type="submit" value="Send">

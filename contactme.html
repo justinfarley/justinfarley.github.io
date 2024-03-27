@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="inputField">
-                    <input type="text" name="email" id="email" placeholder="your@email.com" required pattern="\w+@\w+\.com">
+                    <input type="text" name="email" id="email" placeholder="your@email.com" required pattern="\S+@\S+\.com">
                 </div>
                 
                 <div class="inputField">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="inputField">
-                    <textarea name="message" id="message" rows="8" cols="50" placeholder="Message..." required></textarea>
+                    <textarea name="message" id="message" rows="8" cols="50" placeholder="Message..." required minlength="1"></textarea>
                 </div>
 
                 <input id="submit" type="submit" value="Send">

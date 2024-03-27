@@ -45,6 +45,7 @@ input {
     font-size: 50px;
     font-family: monospace;
     padding: 10px 20px;
+    transition: border-color 0.5s ease-out;
 }
 textarea {
     width: 500px;
@@ -82,4 +83,21 @@ footer h6 {
 
 footer h6 a {
     color: darkblue;
+}
+input:optional {
+    border: 4px solid gray;
+}
+input:required:valid {
+border: 4px solid green;
+}
+input:invalid {
+border: 4px solid red;
+}
+input:required:focus:valid {
+background: /*url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg")*/ no-repeat 95% 50% lightgreen;
+background-size: 25px;
+}
+input:focus:invalid {
+background: /*url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg")*/ no-repeat 95% 50% lightcoral;
+background-size: 25px;
 }
