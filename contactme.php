@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+
+    $user_email = "";
+    $user_subject = "";
+    $user_message = "";
+    $user_full_name = "";
+    $recipient = "";
+    $to = "";
+
+    if($_SERVER["REQUEST_METHOD"] === "POST"){
+        $user_full_name = filter_var($_POST['name'], FILTER_SANITIZE_SPECIAL_CHARS);
+        $user_subject = $_POST['subject'];
+        $user_message = $_POST['message'];
+        $recipient = $_POST['recipient'];
+
+        if($recipient === "Justin Farley"){
+            $to = "j@farley-family.com";
+        }
+        elseif($recipient === "Red Lobster Studios"){
+            $to = "studioredlobster@gmail.com";
+        }
+        $user_email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+        $user_message = $user_message . "FROM " . $user_email;
+
+        if(preg_match(".+@.+\.com", $user_email) === 1){
+            mail($to, $user_subject, $user_message);
+        }
+    }
+    ?>
     <head>
         <meta charset="utf-8">
         <title>Contact Justin Farley</title>
@@ -7,7 +37,7 @@
     </head>
     <body>
         <section id="contact-me-form">
-            <form action="./contactme.html" method="POST">
+            <form action="./processForm.php" method="POST">
                 <h1>Contact Me</h1>
                 <div class="inputField">
                     <input type="text" name="name" id="name" placeholder="Full Name..." required minlength="2" maxlength="40" pattern=".+ .+"> 
