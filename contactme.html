@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Justin Farley</title>
+        <link rel="stylesheet" type="text/css" href="./contactStyle.css">
+    </head>
+    <body>
+        <section id="contact-me-form">
+            <form action="./contactme.html" method="POST">
+                <h1>Contact Me</h1>
+                <div class="inputField">
+                    <input type="text" name="name" id="name" placeholder="Full Name..." required minlength="2" maxlength="40" pattern=".+ .+"> 
+                </div>
+
+                <div class="inputField">
+                    <input type="text" name="email" id="email" placeholder="your@email.com" required pattern=".+@.+\.com">
+                </div>
+                
+                <div class="inputField">
+                    <input type="text" name="subject" id="subject" placeholder="Subject..." required minlength="3" max="150">
+                </div>
+
+                <div class="inputField">
+                    <textarea name="message" id="message" rows="8" cols="50" placeholder="Message..." required></textarea>
+                </div>
+
+                <div class="inputField">
+                    <label for="recipient">To:</label>
+                    <select name="recipient">
+                        <option value="justinfarley">Justin Farley</option>
+                        <option value="rls">Red Lobster Studios</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </body>
+</html>

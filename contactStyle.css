@@ -1,0 +1,10 @@
+form {
+    text-align: center;
+}
+
+.inputField {
+    margin: 20px 0;
+}
+.inputField label {
+    padding-right: 10px;
+}
