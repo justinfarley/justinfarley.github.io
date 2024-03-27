@@ -84,8 +84,8 @@ footer h6 {
 footer h6 a {
     color: darkblue;
 }
-input:optional {
-    border: 4px solid gray;
+input[type="submit"]:hover {
+    background-color: beige;
 }
 input:required:valid {
 border: 4px solid green;
