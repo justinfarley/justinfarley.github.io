@@ -1,10 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Checkbook';
+    src: url('./fonts/CHECKBK0.TTF') format('truetype');
+    font-weight: 1 1000;
+}
+@font-face {
+    font-family: 'Timeline';
+    src: url('./fonts/Timeline.ttf') format('truetype');
+    font-weight: 1 1000;
+}
+@font-face {
+    font-family: 'Codehack';
+    src: url('./fonts/NightmareCodehack.otf') format('opentype');
+    font-weight: 1 1000;
+}
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('./fonts/LuckiestGuy.ttf') format('truetype');
+    font-weight: 1 1000;
+}
+@font-face {
+    font-family: 'Angelina';
+    src: url('./fonts/angelina.TTF') format('truetype');
+    font-weight: 1 1000;
+}
 form {
     text-align: center;
 }
-
+h1 {
+    color: whitesmoke;
+    text-shadow: 3px 3px 0 crimson;
+    font-family: 'Timeline';
+    font-size: 58px;
+    letter-spacing: 4px;
+    margin-top: 12vh;
+}
+input {
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    font-family: monospace;
+    padding: 10px 20px;
+}
+textarea {
+    width: 500px;
+    height: 100px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
 .inputField {
     margin: 20px 0;
 }
 .inputField label {
     padding-right: 10px;
+}
+html {
+    background-image: url("https://us.123rf.com/450wm/mishabokovan/mishabokovan1805/mishabokovan180500038/102620837-programming-code-background.jpg?ver=6");
+
+}
+footer {
+    z-index: 2;
+    position: static;
+    bottom: 0;
+    background-color: rgb(188, 143, 143);
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 12vh;
+}
+footer h6 {
+    
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 20px;
+}
+
+footer h6 a {
+    color: darkblue;
 }

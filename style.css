@@ -105,15 +105,6 @@ figcaption#instafig {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-figcaption#gmailfig {
-    background: linear-gradient(90deg, rgba(62,101,207,1) 20%, rgba(62,101,207,1) 35%, rgba(199,22,16,1) 25%, rgba(199,22,16,1) 63%, rgba(242,166,12,1) 50%, rgba(242,166,12,1) 68%, rgba(8,133,27,1) 68%);
-    background-clip: text;
-    background-position-x: center;
-    background-attachment: relative;
-    position: relative;
-    display: block;
-    -webkit-text-fill-color: transparent;
-}
 #descriptioncontainer {
     position: absolute;
     display: flex;
@@ -572,9 +563,6 @@ footer {
     height: 20px;
     overflow: hidden;
 }
-footer h6::before {
-    content: 'Created by Justin Farley - My Contact: j@farley-family.com - RLS Business Inquires: studioredlobster@gmail.com';
-}
 footer h6 {
     
     font-family: sans-serif;
@@ -582,6 +570,11 @@ footer h6 {
     text-align: center;
     line-height: 20px;
 }
+
+footer h6 a {
+    color: darkblue;
+}
+
 .extendedverticalpadding {
     padding: 0 0 50px 0;
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Justin Farley</title>
+        <link rel="stylesheet" type="text/css" href="./contactStyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
+    </head>
+    <body>
+        <section id="contact-me-form">
+            <form action="https://formspree.io/f/mnqegppp" method="POST">
+                <h1>Contact RLS</h1>
+                <div class="inputField">
+                    <input type="text" name="name" id="name" placeholder="Full Name" required minlength="2" maxlength="40" pattern=".+ .+"> 
+                </div>
+
+                <div class="inputField">
+                    <input type="text" name="email" id="email" placeholder="your@email.com" required pattern=".+@.+\.com">
+                </div>
+                
+                <div class="inputField">
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required minlength="3" max="150">
+                </div>
+
+                <div class="inputField">
+                    <textarea name="message" id="message" rows="8" cols="50" placeholder="Message..." required></textarea>
+                </div>
+
+                <input id="submit" type="submit" value="Send">
+            </form>
+        </section>
+        <footer>
+            <h6><a href="./index.html">Back Home</a> - Created by Justin Farley - <a href="./contactme.html">Contact Me!</a> - RLS Business Inquires: <a href="./contactus.html">Contact Us!</a></h6>
+        </footer>
+    </body>
+
+</html>
