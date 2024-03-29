@@ -14,6 +14,18 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
         <link rel="manifest" href="./images/site.webmanifest">
+        <script>
+            window.onload = function() {
+                var n = localStorage.getItem('on_load_counter');
+                
+                if (n === null) {
+                    n = 0;
+                }
+                n++;
+                document.getElementsByClassName("VisitorCounter")[0].innerHTML = "<h5>Visited " + n + " times.</h5>";
+                localStorage.setItem("on_load_counter", n);
+            }
+        </script>
     </head>
     <!--TODO: Add images to each section related to the matter, make each tab its own .html file and sort the .css file into multiple-->
     <header>
@@ -51,6 +63,9 @@
                 <h1><strong style="opacity: 0; animation: descriptiontext_anim 1 linear 1s 4s forwards, text2 infinite 1.5s alternate linear; color: crimson;" id="descriptiontext">Game Creator,</strong></h1>
                 <h1><strong style="opacity: 0; animation: descriptiontext_anim 1 linear 1s 5s forwards, text3 infinite 1.5s alternate linear; color: blueviolet;" id="descriptiontext">Inspired Programmer.</strong></h1>
             </div>
+            <div class="VisitorCounter">
+            </div>
+
         </div>
         <!--Add some kind of description here like: "Software Developer, Game Creator, Inspired Programmer" to fill the empty space-->
     </header>

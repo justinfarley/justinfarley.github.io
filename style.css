@@ -48,6 +48,15 @@
                      gray -5px -5px 0;
     }
 }
+
+.VisitorCounter {
+    position: absolute;
+    top: 0;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
 #headingtext {
     position: relative;
     text-align: center;
