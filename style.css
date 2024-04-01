@@ -387,7 +387,7 @@ li h2 {
     margin: 0 50px;
 }
 #header {
-    background-image: url("./images/headergifbackground.gif");
+    background-image: url("./images/headerBackgroundImage.png");
     background-size: contain;
     background-size: cover;
     background-position: center center;
