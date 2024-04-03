@@ -592,6 +592,18 @@ footer h6 a {
 .extendedverticalpadding {
     padding: 0 0 50px 0;
 }
+#back-to-home-btn{
+    padding: 20px 20px;
+    display: none;
+    z-index: 5;
+    position: absolute;
+
+}
+#back-to-home-btn img{
+    width: 100px;
+    height: 100px;
+}
+
 
 /*MOBILE VERSION*/
 
@@ -715,6 +727,12 @@ footer h6 a {
     .projectsBody figure img{
         width: auto;
         height: 175px;
+    }
+    #navbar {
+        display: none;
+    }
+    #back-to-home-btn{
+        display: inline;
     }
 }
 
