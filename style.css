@@ -525,13 +525,15 @@ div.sectionDivs {
 #socials figure a img:hover {
     width: 250px;
     height: 250px;
-    transition: width 200ms ease-in, height 200ms ease-in;
+    margin: 0 30px;
+        transition: width 200ms ease-in, height 200ms ease-in;
     border: 7px solid crimson;
 
 }
 #socials figure a img:not(:hover) {
     width: 200px;
     height: 200px;
+    margin: 0 30px;
     transition: width 500ms ease-out,height 500ms ease-out;
     border: 7px solid mediumseagreen;
 }
