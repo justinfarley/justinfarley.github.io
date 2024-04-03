@@ -113,6 +113,7 @@ figcaption {
     -webkit-text-stroke: white 2px;
 }
 figcaption#instafig {
+    background-color: #b52798;
     background: linear-gradient(20deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 21%, rgba(150,47,191,1) 47%, rgba(214,41,118,1) 74%, rgba(79,91,213,1) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
