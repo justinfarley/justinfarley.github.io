@@ -31,10 +31,18 @@
 form {
     text-align: center;
 }
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid darkblue;
+    align-self: center;
+}
 h1 {
     color: whitesmoke;
     text-shadow: 3px 3px 0 crimson;
     font-family: 'Timeline';
+    text-align: center;
     font-size: 58px;
     letter-spacing: 4px;
     margin-top: 12vh;
@@ -101,4 +109,30 @@ background-size: 25px;
 input:focus:invalid {
 background: /*url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg")*/ no-repeat 95% 50% lightcoral;
 background-size: 25px;
+}
+@media only screen and (max-width: 600px){
+    h1 {
+        text-align: center;
+        font-size: 300%;
+        letter-spacing: 4px;
+        margin-top: 12vh;
+    }
+    input {
+        width: 60%;
+        height: 20%;
+        font-size: 20px;
+        font-family: monospace;
+        padding: 10px 20px;
+        transition: border-color 0.5s ease-out;
+    }
+    textarea {
+        width: 60%;
+        height: 20%;
+        font-size: 15px;
+        resize: none;
+        padding: 10px 20px;
+    }
+    #submit {
+        height: 10%;
+    }   
 }

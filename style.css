@@ -335,8 +335,9 @@ ul#nobullets {
 }
 figure a {
     position: relative;
-    display: inline-block;
-    margin: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 figure img {
     width: 200px;
@@ -380,7 +381,7 @@ li h2 {
     overflow: hidden;
 }
 .projectsBody .imgcontainer {
-    margin: 75px 0;
+    margin: 0 0 75px 0;
 }
 .projectsBody a img {
     border-radius: 75px;
@@ -536,7 +537,7 @@ div.sectionDivs {
 }
     
 p {
-    padding: 20 px 0;
+    padding: 20px 0;
 }
 .name_title {
     display: block;
@@ -594,7 +595,7 @@ footer h6 a {
 
 /*MOBILE VERSION*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     #header {
         font-size: 80%;
         min-width: 100%;
@@ -636,7 +637,83 @@ footer h6 a {
         padding: 5px 0;
     
     }
-    
+    h1.section_headers {
+        padding: 30% 0 0 0;
+        font-size: 650%;
+        height: 50%;
+        width: 100%;
+        letter-spacing: 1px;
+        text-wrap: wrap;
+    }
+    div.sectionDivs {
+        width: 100%;
+        height: 100%;
+        padding: 0 0;
+    }
+    p.section_bodies, ul.section_bodies {
+        font-size: 115%;
+        font-weight: 500;
+        margin: 0 20px;
+    }
+    .centeredImg {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: inline;
+        position: relative;
+        margin: 0 20px 25px auto;
+    }
+    footer {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    .imgcontainer {
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .imgcontainer img {
+        vertical-align: middle;
+        align-self: center;
+        margin: 10px 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .figureSocials{
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        vertical-align: middle;
+        flex-wrap: wrap;
+    }
+    #socials figure a img{
+        display: flex;
+        align-items: center;
+        align-self: center;
+        vertical-align: middle;
+    }
+    #socials figure a img:hover {
+        width: 120px;
+        height: 120px;
+    }
+    #socials figure a img:not(:hover) {
+        width: 100px;
+        height: 100px;
+    }
+    .projectsBody figure figcaption {
+        text-wrap: wrap;
+    }
+    .projectsBody figure img{
+        width: auto;
+        height: 175px;
+    }
 }
 
 /*TYPICAL BREAKPOINTS: <600px, 601px, 768px, 992px, 1200px> */
