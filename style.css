@@ -655,8 +655,9 @@ footer h6 a {
     
     }
     h1.section_headers {
-        padding: 20% 0 0 0;
-        font-size: 650%;
+        display: block;
+        padding: 20% 5% 0 5%;
+        font-size: 600%;
         height: 50%;
         width: 100%;
         letter-spacing: 1px;
