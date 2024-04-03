@@ -596,6 +596,7 @@ footer h6 a {
 
 @media only screen and (max-width: 600px) {
     #header {
+        font-size: 80%;
         min-width: 100%;
         min-height: 100%;
     }
@@ -606,28 +607,36 @@ footer h6 a {
         padding: 0 5%;
     }
     .clickable {
-        margin: 5px 30px;
-        font-size: 30px;
+        display: inline-block;
+        margin: 2vmin auto;
+        font-size: calc(2vh + 1vmin);
     }
     #clickable_container {
-        width: 100px;
+        width: 10%;
+        align-items: center;
+        align-self: center;
+        justify-content: center;
         top: 12%;
+        height: 40%;
     }
     #descriptioncontainer {
         display: block;
         align-content: center;
         top: 85%;
+        text-align: center;
         letter-spacing: 2px;
-        font-size: 13px;
+        font-size: 80%;
         width: 100%;
         height: 15%;
     }
     #descriptiontext {
         display: inline-block;
+        font-size: calc(2vh + 1vmin);;
         letter-spacing: 1px;
         padding: 5px 0;
     
     }
+    
 }
 
 /*TYPICAL BREAKPOINTS: <600px, 601px, 768px, 992px, 1200px> */
