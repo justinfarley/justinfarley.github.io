@@ -740,6 +740,10 @@ footer h6 a {
         display: inline;
         position: absolute;
     }
+    #rlsHeader {
+        text-wrap: wrap;
+        content: 'RLS';
+    }
 }
 
 /*TYPICAL BREAKPOINTS: <600px, 601px, 768px, 992px, 1200px> */
