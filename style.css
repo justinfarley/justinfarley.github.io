@@ -185,6 +185,9 @@ figcaption#instafig {
     padding: 0 20px;
 
 }
+#rlsHeader::before {
+    content: 'Red Lobster Studios';
+}
 .centeredImg {
     border-radius: 50%;
     display: inline;
@@ -733,9 +736,9 @@ footer h6 a {
         display: inline;
         position: absolute;
     }
-    #rlsHeader {
+    #rlsHeader::before {
         text-wrap: wrap;
-        content: 'RLS';
+        content: 'Red Lobster Studios';
     }
 }
 
