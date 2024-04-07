@@ -90,10 +90,7 @@ h1.section_headers {
     height: 30%;
     width: 100%;
     letter-spacing: 20px;
-    white-space: wrap;
-    background: linear-gradient(mediumpurple, red);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-wrap: wrap;
     text-shadow: -5px -5px 0 white;
 }
 /*TODO: animate the background for each one this will look gas hopefully*/
@@ -654,7 +651,6 @@ footer h6 a {
         width: 100%;
         letter-spacing: 1px;
         text-wrap: wrap;
-        border: 2px solid red;
     }
     div.sectionDivs {
         width: 100%;
