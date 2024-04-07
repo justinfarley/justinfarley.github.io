@@ -90,7 +90,7 @@ h1.section_headers {
     height: 30%;
     width: 100%;
     letter-spacing: 20px;
-    white-space: nowrap;
+    white-space: wrap;
     background: linear-gradient(mediumpurple, red);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,9 +184,6 @@ figcaption#instafig {
     -1px  0   0 #000;
     padding: 0 20px;
 
-}
-#rlsHeader::before {
-    content: 'Red Lobster Studios';
 }
 .centeredImg {
     border-radius: 50%;
@@ -735,10 +732,6 @@ footer h6 a {
         padding-top: 0;
         display: inline;
         position: absolute;
-    }
-    #rlsHeader::before {
-        text-wrap: wrap;
-        content: 'Red Lobster Studios';
     }
 }
 
