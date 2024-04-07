@@ -290,14 +290,6 @@ h1.section_headers#mysocialsHeader{
 h1.section_headers#skillsHeader{
     animation: skillsHeaderAnim 2s alternate infinite ease-in-out;
 }
-h1.section_headers#aboutHeader{
-    animation: aboutmeHeaderAnim 2s alternate infinite ease-in-out;
-}
-h1.section_headers#rlsHeader{
-    background: linear-gradient(rgb(255, 144, 144) 30%, firebrick 70%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 strong {
     color: salmon;
     font-weight: 900;
@@ -662,6 +654,7 @@ footer h6 a {
         width: 100%;
         letter-spacing: 1px;
         text-wrap: wrap;
+        border: 2px solid red;
     }
     div.sectionDivs {
         width: 100%;
