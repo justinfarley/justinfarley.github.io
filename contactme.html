@@ -12,6 +12,41 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
         <link rel="manifest" href="./images/site.webmanifest">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.querySelector('form');
+                const submitButton = document.getElementById('submit');
+
+                form.addEventListener('submit', function(e) {
+                    const lastSubmitTime = localStorage.getItem('lastSubmitTimeME');
+                    const currentTime = new Date().getTime();
+
+                    if (lastSubmitTime && currentTime - lastSubmitTime < 600000) { // 600000 ms = 10 minutes
+                        e.preventDefault();
+                        alert('Please wait 10 minutes before submitting again.');
+                    } else {
+                        localStorage.setItem('lastSubmitTimeME', currentTime);
+                    }
+                });
+
+                // Check on page load if the button should be disabled
+                function updateButtonState() {
+                    const lastSubmitTime = localStorage.getItem('lastSubmitTimeME');
+                    const currentTime = new Date().getTime();
+
+                    if (lastSubmitTime && currentTime - lastSubmitTime < 600000) {
+                        submitButton.disabled = true;
+                        submitButton.value = 'Try again later';
+                        setTimeout(updateButtonState, 1000); // Check every second
+                    } else {
+                        submitButton.disabled = false;
+                        submitButton.value = 'SUBMIT';
+                    }
+                }
+
+                updateButtonState();
+            });
+        </script>
     </head>
     <body>
         <section id="contact-me-form">

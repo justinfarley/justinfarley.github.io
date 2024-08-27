@@ -1,5 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+        // Konami Code sequence
+        const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        let konamiIndex = 0;
+    
+        document.addEventListener('keydown', (e) => {
+            if (e.key === konamiCode[konamiIndex]) {
+                konamiIndex++;
+                if (konamiIndex === konamiCode.length) {
+                    activateFunMode();
+                    konamiIndex = 0;
+                }
+            } else {
+                konamiIndex = 0;
+            }
+        });
+    
+        function activateFunMode() {
+            document.body.style.fontFamily = '"Comic Sans MS", cursive';
+            document.body.style.backgroundColor = 'pink';
+            alert('🎉 Fun mode activated! 🎉');
+            
+            // Make images dance
+            const images = document.getElementsByTagName('img');
+            for (let img of images) {
+                img.style.animation = 'dance 0.5s infinite';
+            }
+    
+            // Add some confetti
+            for (let i = 0; i < 50; i++) {
+                createConfetti();
+            }
+        }
+    
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.animationDuration = Math.random() * 3 + 2 + 's';
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+            document.body.appendChild(confetti);
+    
+            setTimeout(() => {
+                confetti.remove();
+            }, 5000);
+        }
+    </script>
+    <style>
+        @keyframes dance {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(100vh); }
+        }
+    </style>
     <head>
         <title>Justin Farley's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +76,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
         <link rel="manifest" href="./images/site.webmanifest">
+        
     </head>
     <body>
         <nav id="back-to-home-btn">
@@ -38,7 +104,6 @@
         </nav>
         <div id="projects" class="sectionDivs">
             <h1 class="section_headers" id="projectsHeader">Projects</h1>
-            <!--TODO: add like tiles of my proudest projects-->
             <div class="projectsBody">
                 <div class="imgcontainer">
                     <figure>
