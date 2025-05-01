@@ -491,6 +491,11 @@ h2 {
                 0 -1px 20px firebrick;
 }
 
+.credits
+{
+    text-align: center;
+}
+
 div.sectionDivs {
     position: relative;
     display: block;
@@ -528,6 +533,7 @@ div.sectionDivs {
     border: 7px solid mediumseagreen;
 }
     
+
 p {
     padding: 20px 0;
 }
@@ -536,6 +542,24 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.middle-screen 
+{
+    display: flex;
+    width: 75%;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-parent
+{
+    display: flex;
+    width: 97vw;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .clickable {
